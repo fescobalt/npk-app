@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* init styles on user's enter */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1e1e1e;
+    --text: #f0f0f0;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #ffffff;
+    --text: #000000;
+  }
+}
+
+
+/* attrubite controlled theme */
+:root[main-theme='light'] {
+  --bg: #ffffff;
+  --text: #000000;
+}
+:root[main-theme='dark'] {
+  --bg: #1e1e1e;
+  --text: #f0f0f0;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}

@@ -1,0 +1,8 @@
+.root { 
+  background-color: var(--bg);
+  color: var(--text);
+}
+.error {
+  border: 1px solid red;
+  background-color: darkred;
+}

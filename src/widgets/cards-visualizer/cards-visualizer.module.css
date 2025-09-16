@@ -1,0 +1,12 @@
+.helpText {
+  font-size: 0.75rem;
+  margin-top: 0;
+  color: #A0A0A0;
+}
+
+.paginator {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
