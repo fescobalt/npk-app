@@ -20,6 +20,8 @@ const ComboBox: React.FC<ComboBoxType> = ({ values, error, ...props }) => {
         {values.map(val => (
           <option key={val} value={val}></option>
         ))}
+
+        
       </datalist>
     </>
   );
